@@ -2,7 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  border: 1px solid red;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 body {
@@ -19,8 +24,25 @@ body {
 }
 
 .card {
+  border: 1px solid red;
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  gap: 32px;
+  grid-template-columns: repeat(1, 12fr);
+}
+.card .card__title {
+  display: grid;
+  grid-template-columns: 12fr;
+  gap: 16px;
+}
+.card .description__head {
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.card .description__text {
+  line-height: 1.3;
+  color: hsl(0, 0%, 63%);
 }
 
 @media (min-width: 768px) {
