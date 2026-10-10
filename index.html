@@ -33,7 +33,44 @@
     </style>
   </head>
   <body>
-    <header class="">1</header>
+    <header class="container">
+      <nav class="nav">
+        <button
+          type="button"
+          class="nav__toggle nav__toggle--open"
+          id="hamburger"
+        >
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </button>
+
+        <a href="#" class="nav__brand">
+          <img src="./images/logo.svg" alt="" />
+        </a>
+        <ul class="nav__list">
+          <li class="nav__item nav__item--close">
+            <button
+              type="button"
+              class="nav__toggle nav__toggle--close"
+              id="close-button"
+            >
+              <img src="./images/icon-close.svg" alt="" />
+            </button>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Shop</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main class="main">
       <section class="hero container">
         <div class="hero__slider">
@@ -87,29 +124,31 @@
               <a href="#" class="hero__link">Shop now </a>
             </div>
           </article>
-          <div class="hero__buttons">
-            <button type="button" class="btn">
-              <img src="./images/icon-angle-left.svg" alt="" />
-            </button>
-            <button type="button" class="btn">
-              <img src="./images/icon-angle-right.svg" alt="" />
-            </button>
-          </div>
+          <div class="hero__buttons"></div>
         </div>
       </section>
       <section class="card container">
-        <div class="card__image">image</div>
-        <div class="card__title">Title</div>
-        <div class="card__image">image</div>
+        <div class="card__image">
+          <img src="./images/image-about-dark.jpg" alt="image-about-dark" />
+        </div>
+        <div class="card__title description">
+          <h2 class="description__head">About our furniture</h2>
+          <p class="description__text">
+            Our multifunctional collection blends design and function to suit
+            your individual taste. Make each room unique, or pick a cohesive
+            theme that best express your interests and what inspires you. Find
+            the furniture pieces you need, from traditional to contemporary
+            styles or anything in between. Product specialists are available to
+            help you create your dream space.
+          </p>
+        </div>
+        <div class="card__image">
+          <img src="./images/image-about-light.jpg" alt="image-about-light" />
+        </div>
+        <button>next</button>
       </section>
     </main>
     <script src="script.js"></script>
-    <!-- Home Shop About Contact  
-     About our furniture Our
-    multifunctional collection blends design and function to suit your
-    individual taste. Make each room unique, or pick a cohesive theme that best
-    express your interests and what inspires you. Find the furniture pieces you
-    need, from traditional to contemporary styles or anything in between.
-    Product specialists are available to help you create your dream space. -->
   </body>
 </html>
+<!--  -->
