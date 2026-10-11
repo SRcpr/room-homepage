@@ -74,10 +74,24 @@
     <main class="main">
       <section class="hero container">
         <div class="hero__slider">
+          <!--  -->
+          <div class="btns">
+            <button type="button" id="btn-prev" class="btn">
+              <img src="./images/icon-angle-left.svg" alt="" />
+            </button>
+            <button type="button" id="btn-next" class="btn">
+              <img src="./images/icon-angle-right.svg" alt="" />
+            </button>
+          </div>
+          <!--  -->
           <article class="hero__slide hero__slide--active">
-            <div class="hero__image">
-              <img src="./images/desktop-image-hero-1.jpg" alt="" />
-            </div>
+            <picture class="hero__image">
+              <source
+                media="(min-width:768px )"
+                srcset="./images/desktop-image-hero-1.jpg"
+              />
+              <img src="./images/mobile-image-hero-1.jpg" alt="" />
+            </picture>
             <div class="hero__content">
               <h1 class="hero__head">Discover innovative ways to decorate</h1>
               <p class="hero__text">
@@ -87,14 +101,21 @@
                 with our collection and make your property a reflection of you
                 and what you love.
               </p>
-              <a href="#" class="hero__link">Shop now </a>
+              <a href="#" class="hero__link"
+                >Shop now <img src="./images/icon-arrow.svg" alt=""
+              /></a>
             </div>
           </article>
 
           <article class="hero__slide">
-            <div class="hero__image">
-              <img src="./images/desktop-image-hero-2.jpg" alt="" />
-            </div>
+            <picture class="hero__image">
+              <source
+                media="(min-width:768px )"
+                srcset="./images/desktop-image-hero-2.jpg"
+                sizes=""
+              />
+              <img src="./images/mobile-image-hero-2.jpg" alt="" />
+            </picture>
             <div class="hero__content">
               <h2 class="hero__head">We are available all across the globe</h2>
               <p class="hero__text">
@@ -109,9 +130,14 @@
           </article>
 
           <article class="hero__slide">
-            <div class="hero__image">
-              <img src="./images/desktop-image-hero-3.jpg" alt="" />
-            </div>
+            <picture class="hero__image">
+              <source
+                media="(min-width:768px )"
+                srcset="./images/desktop-image-hero-3.jpg"
+                sizes=""
+              />
+              <img src="./images/mobile-image-hero-3.jpg" alt="" />
+            </picture>
             <div class="hero__content">
               <h2 class="hero__head">Manufactured with the best materials</h2>
               <p class="hero__text">
@@ -131,9 +157,9 @@
         <div class="card__image">
           <img src="./images/image-about-dark.jpg" alt="image-about-dark" />
         </div>
-        <div class="card__title description">
-          <h2 class="description__head">About our furniture</h2>
-          <p class="description__text">
+        <div class="card__content">
+          <h2 class="card__head">About our furniture</h2>
+          <p class="card__text">
             Our multifunctional collection blends design and function to suit
             your individual taste. Make each room unique, or pick a cohesive
             theme that best express your interests and what inspires you. Find
@@ -145,9 +171,9 @@
         <div class="card__image">
           <img src="./images/image-about-light.jpg" alt="image-about-light" />
         </div>
-        <button>next</button>
       </section>
     </main>
+
     <script src="script.js"></script>
   </body>
 </html>
